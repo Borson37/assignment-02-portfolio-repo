@@ -77,8 +77,14 @@
 .card{
     width: 270px;
     margin-bottom: 30px;
-    gap: 10px;
+    margin-left: 20px;
+    
     text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    
 }
 .btn-primary{
     width: 100%;
@@ -86,6 +92,44 @@
     color: white;
     padding: 10px;
 }
+
+/* flowler lover section */
+.flower-lover{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.flower-lover-logo img, .flower-lover-details{
+    /* width: 100px; */
+    height: auto;
+}
+.flower-lover-details{
+    margin-left: 50px;
+    text-align: start;
+    font-size: 1.5rem;
+    ;
+}
+.flower-container{
+    display: flex;
+    
+    align-items: center;
+    
+}
+.inter-font li{
+    color: rgba(0, 0, 0, 0.5);
+}
+#badge{
+    width: 200px;
+    margin-bottom: -100px;
+    margin-right: -100px;
+    margin-left: 430px;
+   
+}
+.flower-lover-logo{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 
 
 /* responsive media query */
@@ -97,24 +141,56 @@
         justify-content: space-around;
         width: 100%;
     }
-    .nav-links, .banner{
+    .nav-links, .banner {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin: 10px auto;
     }
      .banner-logo img {
     width: 100%;
     height: auto;
+    margin: 0 auto;
     
   }
   /* plant section */
 
  .our-plants-pic{
-    max-width: 171px;
+    
     grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin: 0 auto;
  }
    .banner-item{
     width: 100%;
    }
+  .card{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  /* flower lover */
+.flower-lover{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  #badge{
+    display: none;
+  }
+  .flower-lover-details{
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  
+  #logo{
+    width: 330px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+ 
 }
+
