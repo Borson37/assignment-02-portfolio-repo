@@ -60,6 +60,34 @@
 .banner-description{
     font-size: 1.5rem;
 }
+
+/* plants section style */
+.plants-section{
+    margin-top: 100px;
+    
+}
+.our-plants-topic{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.our-plants-pic{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card{
+    width: 270px;
+    margin-bottom: 30px;
+    gap: 10px;
+    text-align: center;
+}
+.btn-primary{
+    width: 100%;
+    background-color: #E95A08;
+    color: white;
+    padding: 10px;
+}
+
+
 /* responsive media query */
 @media screen  and (max-width: 500px){
     .link{
@@ -67,6 +95,7 @@
     }
     .navbar{
         justify-content: space-around;
+        width: 100%;
     }
     .nav-links, .banner{
         flex-direction: column-reverse;
@@ -75,9 +104,17 @@
         width: 100%;
     }
      .banner-logo img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     
   }
-   
+  /* plant section */
+
+ .our-plants-pic{
+    max-width: 171px;
+    grid-template-columns: repeat(2, 1fr);
+ }
+   .banner-item{
+    width: 100%;
+   }
 }
